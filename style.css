@@ -95,7 +95,8 @@ body {
 
 }
 #switch button:hover{
-  outline: 5px solid  rgba(255, 255, 255, 0.3);
+  /* outline: 5px solid  rgba(255, 255, 255, 0.3); */
+  background: rgb(205, 163, 211) var(--switch-bg-url) no-repeat center;
 }
 ul {
   list-style: none;
