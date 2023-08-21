@@ -76,6 +76,8 @@ body {
   z-index: 1;
   top: 50%;
   transform: translateY(-50%);
+  animation: slide-out 0.4s forwards;
+  
 }
 #switch span {
   width: 64px;
@@ -86,10 +88,14 @@ body {
   -webkit-backdrop-filter: blur(4px);
   display: block;
   border-radius: 9999px;
+  
 }
 .light #switch button {
-  right: 0;
-  left: initial;
+  animation: slide-in 0.4s forwards;
+
+}
+#switch button:hover{
+  outline: 5px solid  rgba(255, 255, 255, 0.3);
 }
 ul {
   list-style: none;
@@ -142,4 +148,22 @@ ul li a:hover {
 #social-links a:hover {
   background: var(--bgsocial-color);
   /* box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan,  0 0 200px cyan; */
+}
+
+
+@keyframes slide-in {
+  from{
+    left: 0%;
+  }
+  to{
+    left: 50%;
+  }
+}
+@keyframes slide-out {
+  from{
+    left: 50%;
+  }
+  to{
+    left: 0%;
+  }
 }
