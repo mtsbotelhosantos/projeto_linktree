@@ -8,7 +8,6 @@
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - HTML e CSS
-  - teste
 - JavaScript
 - Git e Github
 - Figma
